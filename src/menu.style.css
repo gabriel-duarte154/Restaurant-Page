@@ -1,0 +1,92 @@
+@import url(./root.css);
+
+
+section#menu {
+  padding: 1rem;
+  background-color: rgb(241, 167, 27);
+  min-height: 100vh;
+  display: none;
+}
+
+section#menu .title {
+  font-weight: bold;
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+  text-transform: uppercase;
+  color: white;
+} 
+
+.grid-wrapper {
+  display: grid;
+  grid-auto-rows: 300px;
+  grid-auto-columns: 1fr;
+  grid-template-areas: 
+    "img des"
+   "des2 img2"
+   "img3 des3"
+   "des4 img4";
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: var(--shadow);
+  background-color: transparent;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.description {
+  display: flex;
+  place-self: center;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-yellow);
+  height: 100%;
+  width: 100%;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: .2rem;
+}
+
+.img1 {
+  background: url(./imgs/pizza-1-image.jpg) center;
+  background-size: cover;
+  grid-area: img;
+}
+
+.img2 {
+  background: url(./imgs/pizza-2-image.jpg) center;
+  background-size: cover;
+  grid-area: img2;
+}
+
+.img3 {
+  background: url(./imgs/pizza-3-image.jpg) center;
+  background-size: cover;
+  grid-area: img3;
+}
+
+.img4 {
+  background: url(./imgs/pizza-4-image.jpg) center ;
+  background-size: cover;
+  grid-area: img4;
+}
+
+@media screen and (max-width: 1000px) {
+  .grid-wrapper {
+    grid-template-areas: 
+    "img"
+    "des"
+    "img2"
+    "des2"
+    "img3"
+    "des3"
+    "img4"
+    "des4";
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .description{
+    margin-bottom: 2rem;
+  }
+}
