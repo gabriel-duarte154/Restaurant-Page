@@ -2,6 +2,7 @@ import { generateTopBar } from './top-bar/top-bar.js';
 import { generateHomePage } from './home/home-page.js';
 import { generateMenuPage } from './menu/menu-page.js';
 import { generateContactPage } from './contact/contact-page.js';
+import './standard.css';
 
 const topBar = generateTopBar();
 const pages = {
