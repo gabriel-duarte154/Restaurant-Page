@@ -69,6 +69,10 @@ section#menu .title {
 	grid-area: img3;
 }
 
+section {
+	animation: showUp 1s ease;
+}
+
 @media screen and (max-width: 1000px) {
 	.grid-wrapper {
 		grid-template-areas:
