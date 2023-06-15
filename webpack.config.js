@@ -13,7 +13,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './src/favicon/favicon.ico'
     })
   ],
   module: {
@@ -23,7 +24,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(png|svg|jpeg|jpg|gif)$/i,
+        test: /\.(png|svg|jpeg|jpg|gif|ico)$/i,
         type: 'asset/resource',
       },
     ],
