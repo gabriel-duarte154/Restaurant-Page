@@ -1,2 +1,2 @@
 # Restaurant-Page
-A project of a restaurant page
+A project of a restaurant page for The Odin project
